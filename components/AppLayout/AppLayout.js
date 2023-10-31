@@ -3,6 +3,7 @@ import {useUser} from "@auth0/nextjs-auth0/client";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoins } from "@fortawesome/free-solid-svg-icons";
+import { Logo } from "../Logo";
 
 
 export const AppLayout=({children})=>{
@@ -11,7 +12,7 @@ export const AppLayout=({children})=>{
    <div className="grid grid-cols-[300px_1fr] h-screen max-h-screen">
      <div className="flex flex-col text-white overflow-hidden">
        <div className="bg-slate-800 px-2">
-         <div>logo</div>
+         <Logo/>
          <Link
            href="/post/new"
            className="bg-green-500 tracking-wider w-full text-center text-white font-bold cursor-pointer uppercase px-4 py-2 rounded-md hover:bg-green-600 transition-colors block"
